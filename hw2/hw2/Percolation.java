@@ -95,9 +95,4 @@ public class Percolation {
     public boolean percolates() {
         return ds.connected(length+1, length);
     }
-
-    public static void main(String[] args) {
-
-    }
-
 }
