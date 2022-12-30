@@ -4,9 +4,9 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
     /** create a N-by-N ds, with all sites initially blocked*/
-    public WeightedQuickUnionUF ds, auxi_ds;
-    public int numOpenSites;
-    public int size;
+    private WeightedQuickUnionUF ds, auxi_ds;
+    private int numOpenSites;
+    private int size;
     private int[] grid;
     private int length;
     public Percolation(int N) {
@@ -31,7 +31,7 @@ public class Percolation {
         }
     }
 
-    public int xyTo1D(int row, int col){
+    private int xyTo1D(int row, int col){
         if (row < 0 || row >= size) {
             return -1;
         } else if (col < 0 || col >= size) {
@@ -94,5 +94,9 @@ public class Percolation {
 
     public boolean percolates() {
         return ds.connected(length+1, length);
+    }
+
+    public static void main(String[] args){
+        return;
     }
 }
