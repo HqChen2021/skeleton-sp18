@@ -14,8 +14,8 @@ public class ArrayMap<K, V> implements Map61B<K, V> {
     int size;
 
     public ArrayMap() {
-        keys = (K[]) new Object[100];
-        values = (V[]) new Object[100];
+        keys = (K[]) new Object[3];
+        values = (V[]) new Object[3];
         size = 0;
     }
 
